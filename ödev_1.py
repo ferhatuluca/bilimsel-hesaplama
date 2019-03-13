@@ -11,9 +11,9 @@ def denklem(liste):
 
 
 liste = []
-print("1. denklemin katsayılarını ve sabit sayısını giriniz")
+print("1. denklemin katsayılarını ve sabit sayısını sırayla giriniz")
 liste.append([int(input()), int(input()), int(input())])
-print("2. denklemin katsayılarını ve sabit sayısını giriniz")
+print("2. denklemin katsayılarını ve sabit sayısını sırayla giriniz")
 liste.append([int(input()), int(input()), int(input())])
 print("\n")
 
