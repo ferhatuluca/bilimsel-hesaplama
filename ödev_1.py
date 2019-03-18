@@ -25,22 +25,22 @@ def determinand_N_by_N(liste):
             for j in range(sütun):                      # Sütunları çarpan ile çarpmak için dolaşan döngü.
                 list[i][j] += -carpan * list[i+1][j]
 
-
+    
     print("\nsol üçgen matris", list)
 
-    sayac = 0                                           # Matriste en alt satırdan üst satırlara gidilmesi için gereken değişken.
+                                            
     for p in range(satir-1, 0, -1):
-        for t in range(satir-1, sayac, -1):
+        for t in range(satir-1, satir-1-p, -1):
             carpan = list[t][p]/list[t-1][p]
             for h in range(sütun):
                 list[t][h] += -carpan * list[t-1][h]
 
-        sayac += 1
+      
 
     print("köşegen matris", list, "\n")
 
     for o in range(satir-1, -1, -1):
-            print(satir-o, ". değişken değeri =", liste[o][satir]/liste[o][satir-o-1])
+            print(satir-o, ". değişken değeri =", liste[o][satir] / liste[o][satir-o-1])
 
 
 liste_2 = [[2, 3, 5], [4, 8, 20]]
