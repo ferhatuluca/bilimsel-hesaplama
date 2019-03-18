@@ -28,14 +28,14 @@ def determinand_N_by_N(liste):
 
     print("\nsol üçgen matris", list)
 
-    count = 0                                           # Matriste en alt satırdan üst satırlara gidilmesi için gereken değişken.
+    sayac = 0                                           # Matriste en alt satırdan üst satırlara gidilmesi için gereken değişken.
     for p in range(satir-1, 0, -1):
-        for t in range(satir-1, count, -1):
+        for t in range(satir-1, sayac, -1):
             carpan = list[t][p]/list[t-1][p]
             for h in range(sütun):
                 list[t][h] += -carpan * list[t-1][h]
 
-        count += 1
+        sayac += 1
 
     print("köşegen matris", list, "\n")
 
