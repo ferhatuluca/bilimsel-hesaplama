@@ -20,7 +20,7 @@ def Yarıya_bölme_yöntemi(x1, x2):
         for i in range(1000):
             xr = (x1+x2)/2
             if(int(f(xr)*pow(10, 9)) == 0):
-                print("Yarıya bölme yöntemi - ""kok: ", xr, i, "adımda")
+                print("Yarıya bölme yöntemi   ", "kok: ", xr, i, "adımda")
                 break
             elif(f(x1)*f(xr)<0):
                 x2 = xr
@@ -37,7 +37,7 @@ def Dogruya_yaklaştırma_yöntemi(x1, x2):
         for i in range(1000):
             xr = (f(x2)*x1-f(x1)*x2)/(f(x2)-f(x1))
             if (int(f(xr)*pow(10, 9)) == 0 ):
-                print("Doğruya yaklaştırma yöntemi - ", "kok: ", xr, i, "adımda")
+                print("Doğruya yaklaştırma yöntemi   ", "kok: ", xr, i, "adımda")
                 break
             elif (f(x1) * f(xr) < 0):
                 x2 = xr
@@ -55,7 +55,7 @@ def Newton_yöntemi(x1, x2):
         xn = x0 - f(x0)/df(x0)
         for i in range(1000):
             if (int(f(xn)*pow(10, 9)) == 0):
-                print("Newton yöntemi - ""kok: ", xn, i, "adımda")
+                print("Newton yöntemi   ", "kok: ", xn, i, "adımda")
                 break
             elif (f(x1) * f(xn) < 0):
                 x2 = xn
